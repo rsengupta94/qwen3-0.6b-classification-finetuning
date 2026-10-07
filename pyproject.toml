@@ -1,0 +1,13 @@
+[project]
+name = "classification"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.1.0",
+    "ftfy>=6.3.1",
+    "huggingface-hub>=0.30",
+    "iterative-stratification>=0.1.9",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "transformers>=4.51",
+]
