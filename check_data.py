@@ -10,19 +10,13 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from transformers import AutoTokenizer
 
-LABELS = ["blood", "cancer and neoplasms", "cardiovascular", "congenital disorders", "disputed aetiology and other",
-          "ear", "eye", "generic health relevance", "infection", "inflammatory and immune system",
-          "injuries and accidents", "mental health", "metabolic and endocrine", "musculoskeletal", "neurological",
-          "oral and gastrointestinal", "renal and urogenital", "reproductive health and childbirth", "respiratory",
-          "skin", "stroke"]
-SEP = ";"
-MODEL_NAME, REVISION = "Qwen/Qwen3-0.6B-Base", "da87bfb608c14b7cf20ba1ce41287e8de496c0cd"
+from settings import LABEL_SEP, LABELS, MODEL_NAME, MODEL_REVISION, RAW_TEST, RAW_TRAIN
 
-train = pd.read_csv("data/raw/hrcs_training_data.csv")
-test = pd.read_csv("data/raw/hrcs_test_data.csv")
+train = pd.read_csv(RAW_TRAIN)
+test = pd.read_csv(RAW_TEST)
 for df in (train, test):
     df["text"] = df["AwardTitle"].fillna("") + "\n" + df["AwardAbstract"].fillna("")
-    df["labels"] = df["HCs"].astype(str).apply(lambda s: [l.strip().lower() for l in s.split(SEP) if l.strip()])
+    df["labels"] = df["HCs"].astype(str).apply(lambda s: [l.strip().lower() for l in s.split(LABEL_SEP) if l.strip()])
     df["labelset"] = df["labels"].apply(lambda ls: tuple(sorted(set(ls))))
 
 
@@ -36,7 +30,7 @@ def pct(a, b):
 
 # ---------------------------------------------------------------------------
 section("1. LABELS (training file)")
-raw_tokens = Counter(t for s in train["HCs"].astype(str) for t in s.split(SEP))
+raw_tokens = Counter(t for s in train["HCs"].astype(str) for t in s.split(LABEL_SEP))
 print("distinct raw label strings:", len(raw_tokens))
 variants = [t for t in raw_tokens if t != t.strip() or t.strip().lower() not in LABELS]
 print("raw strings that are not one of the 21 (after trim + lowercase):", variants or "none")
@@ -159,7 +153,7 @@ for i in np.argsort(-be)[:2]:
 
 # ---------------------------------------------------------------------------
 section("4. LENGTH (Qwen3-0.6B-Base tokenizer, pinned revision)")
-tok = AutoTokenizer.from_pretrained(MODEL_NAME, revision=REVISION)
+tok = AutoTokenizer.from_pretrained(MODEL_NAME, revision=MODEL_REVISION)
 for name, df in (("train", train), ("test", test)):
     L = np.array([len(x) for x in tok(df["text"].tolist(), add_special_tokens=True)["input_ids"]])
     df["tokens"] = L

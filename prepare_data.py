@@ -21,18 +21,10 @@ from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import connected_components
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# ── Settings used by this step (they move to the shared settings file at Setup) ──
-LABELS = ["blood", "cancer and neoplasms", "cardiovascular", "congenital disorders", "disputed aetiology and other",
-          "ear", "eye", "generic health relevance", "infection", "inflammatory and immune system",
-          "injuries and accidents", "mental health", "metabolic and endocrine", "musculoskeletal", "neurological",
-          "oral and gastrointestinal", "renal and urogenital", "reproductive health and childbirth", "respiratory",
-          "skin", "stroke"]                     # lowercase; list order = label IDs
-LABEL_SEP = ";"
-MAX_LABELS = 5                                  # HRCS allows at most five categories per grant
-SEED = 123
-RAW_TRAIN, RAW_TEST = "data/raw/hrcs_training_data.csv", "data/raw/hrcs_test_data.csv"
-SPLITS_DIR = "data/splits"
-VAL_SIZE = 2000                                 # from 2022 training grants, to match the 2022 test set
+from settings import LABEL_SEP, LABELS, MAX_LABELS, RAW_TEST, RAW_TRAIN, SEED, SPLITS_DIR
+
+# ── Settings used only by this step (shared ones live in settings.py) ──
+VAL_SIZE = 2000                                # from 2022 training grants, to match the 2022 test set
 NEAR_COPY = 0.90                                # abstract similarity at or above this counts as a near-copy
 GTR_PLACEHOLDER = "Abstracts are not currently available in GtR"
 SPREADSHEET_ERROR = re.compile(r"#(?:NAME\?|VALUE!|REF!|N/A|DIV/0!|NULL!)")
