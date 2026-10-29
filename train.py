@@ -1,4 +1,4 @@
-"""Step 6: train the model. Writes runs/<name>/ and data/predictions/validation/<name>.csv.
+"""Step 6: train the model. Writes runs/<name>/. Then run predict.py <name> for the validation predictions.
 
 Applies these decisions: whole model in float32 (41, 42); 4 x 4 = 16 grants per update (43); grants grouped by
 length (44); no half-size math (45); 3 passes, learning rate 5e-5 with 10% warm-up, validation scored before training
@@ -17,14 +17,13 @@ from datetime import datetime
 from pathlib import Path
 
 from load_model import load_model                        # first: settings sets the GPU fallback before torch loads
-import numpy as np
 import torch
 import transformers
 from datasets import load_from_disk
 from transformers import DataCollatorWithPadding, Trainer, TrainingArguments
 
-from score import metrics, pick_threshold, report, save_predictions
-from settings import MAX_LEN, SEED, SPLITS_DIR, TOKENIZED_DIR
+from score import metrics, pick_threshold
+from settings import MAX_LEN, SEED, TOKENIZED_DIR
 
 cli = argparse.ArgumentParser()
 cli.add_argument("name")
@@ -42,7 +41,6 @@ started = datetime.now()
 # ─────────────────────────────────────────────────────────────
 data = load_from_disk(TOKENIZED_DIR)
 val = data["validation"]
-val_ids = list(load_from_disk(SPLITS_DIR)["validation"]["id"])  # same row order as data/tokenized (checked)
 check_set = val.select(range(64)) if cli.test else val
 tok, model = load_model()
 
@@ -79,14 +77,10 @@ trainer = Trainer(model=model, args=args, train_dataset=data["train"], eval_data
 trainer.train(resume_from_checkpoint=True if cli.resume else None)
 
 # ─────────────────────────────────────────────────────────────
-# 3. SAVE: the best model, its validation predictions, the history and the run record
+# 3. SAVE: the best model, the history and the run record
 # ─────────────────────────────────────────────────────────────
 tok.model_max_length = MAX_LEN                           # must: the saved tokenizer cuts new text at 512 too
 trainer.save_model(str(run_dir / "best"))                # best checkpoint (loaded at the end), config, tokenizer
-
-probs = torch.sigmoid(torch.tensor(trainer.predict(val).predictions)).numpy()
-t = pick_threshold(probs, np.array(val["labels"], dtype=int))
-report(save_predictions("validation", cli.name, val_ids, probs >= t, probs))
 
 (run_dir / "history.json").write_text(json.dumps(trainer.state.log_history, indent=1))
 git = lambda *a: subprocess.run(["git", *a], capture_output=True, text=True).stdout.strip()
@@ -97,8 +91,8 @@ record = {
     "git_commit": git("rev-parse", "HEAD"), "uncommitted_changes": bool(git("status", "--porcelain")),
     "versions": {"torch": torch.__version__, "transformers": transformers.__version__},
     "best_checkpoint": trainer.state.best_model_checkpoint, "best_f1_at_target": trainer.state.best_metric,
-    "validation_threshold": t, "settings": args.to_dict(),
+    "settings": args.to_dict(),
 }
 (run_dir / "run_record.json").write_text(json.dumps(record, indent=1, default=str))
 print(f"\nbest checkpoint: {record['best_checkpoint']} | validation micro-F1 at target {record['best_f1_at_target']:.3f}"
-      f" | threshold {t:.3f} | {record['hours']} h")
+      f" | {record['hours']} h")
