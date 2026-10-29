@@ -19,6 +19,7 @@ RAW_TRAIN, RAW_TEST = "data/raw/hrcs_training_data.csv", "data/raw/hrcs_test_dat
 SPLITS_DIR = "data/splits"
 TOKENIZED_DIR = "data/tokenized"
 PREDICTIONS_DIR = "data/predictions"            # one CSV per row per split, in the shared format (score.py)
+GUIDE_FILE = "data/guide/2026-10-29/guide.md"   # frozen HRCS guide for Claude's prompt (fetch_guide.py, decision 38)
 
 # ── Model ────────────────────────────────────────────────────
 MODEL_NAME, MODEL_REVISION = "Qwen/Qwen3-0.6B-Base", "da87bfb608c14b7cf20ba1ce41287e8de496c0cd"  # decision 31; pinned

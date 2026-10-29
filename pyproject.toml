@@ -4,6 +4,7 @@ version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.15.0",
+    "beautifulsoup4>=4.15.0",
     "datasets>=5.1.0",
     "ftfy>=6.3.1",
     "huggingface-hub>=0.30",
