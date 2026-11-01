@@ -2,6 +2,7 @@
 
   - pick_threshold: the strictest single threshold that still catches 80% of true categories (decisions 32-33, 48)
   - metrics: micro-F1 (the headline), precision, recall, macro-F1
+  - output_rule: yes/no answers at the threshold, kept to 1–5 categories per grant (decision 62)
   - save_predictions: the one file format every row writes (test files only at the end, decision 52)
 
 Usage: score.py data/predictions/<split>/<row>.csv
@@ -29,6 +30,18 @@ def metrics(pred, labels):
     p, r, f1, _ = precision_recall_fscore_support(labels, pred, average="micro", zero_division=0)
     macro_f1 = precision_recall_fscore_support(labels, pred, average="macro", zero_division=0)[2]
     return {"micro_f1": float(f1), "precision": float(p), "recall": float(r), "macro_f1": float(macro_f1)}
+
+
+def output_rule(scores, threshold):
+    """Yes/no answers at the threshold, kept to the 1–5 categories HRCS allows (decision 62): a grant with none gets its
+    top-scoring category, and a grant with more than five keeps its top five."""
+    pred = scores >= threshold
+    for i in np.where(pred.sum(axis=1) == 0)[0]:
+        pred[i, scores[i].argmax()] = True
+    for i in np.where(pred.sum(axis=1) > MAX_LABELS)[0]:
+        pred[i] = False
+        pred[i, np.argsort(scores[i])[-MAX_LABELS:]] = True
+    return pred
 
 
 def save_predictions(split, row, ids, pred, scores=None):

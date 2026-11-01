@@ -3,8 +3,11 @@
 Applies these decisions:
   - reads the full title and abstract, not cut at 512 tokens (decision 50)
   - no class weights (decision 22); three strengths fixed in advance, picked on validation by decision 48's score (decision 51)
-  - validation predictions only; test predictions are made later, for every row together (decision 52)
+  - every grant gets 1–5 categories (decision 62)
+  - --test (at the end only, decision 52): the saved model, no retraining, writes validation and test predictions;
+    no test score printed
 """
+import argparse
 from pathlib import Path
 
 import joblib
@@ -14,14 +17,30 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.multiclass import OneVsRestClassifier
 
-from score import metrics, pick_threshold, report, save_predictions
+from score import metrics, output_rule, pick_threshold, report, save_predictions
 from settings import SEED, SPLITS_DIR
 
 # ── Settings used only by this step (shared ones live in settings.py) ──
 STRENGTHS = [2, 8, 32, 128]                     # C: higher = trusts individual words more (decision 51; 128 added, decision 53)
 MODEL_FILE = "models/keyword_model.joblib"      # kept for the test predictions at the end (decision 52)
 
+cli = argparse.ArgumentParser()
+cli.add_argument("--test", action="store_true")
+cli = cli.parse_args()
+
 splits = load_from_disk(SPLITS_DIR)
+if cli.test:                                    # the frozen model as saved: no retraining
+    saved = joblib.load(MODEL_FILE)
+    for split in ("validation", "test"):
+        data = splits[split]
+        scores = saved["model"].predict_proba(saved["vectorizer"].transform(list(data["text"])))
+        path = save_predictions(split, "keyword", data["id"], output_rule(scores, saved["threshold"]), scores)
+        if split == "validation":
+            report(path)
+        else:
+            print(f"saved {path}")
+    raise SystemExit
+
 train, val = splits["train"], splits["validation"]
 y_train, y_val = np.array(train["label"], dtype=int), np.array(val["label"], dtype=int)
 
@@ -44,4 +63,4 @@ for c in STRENGTHS:
 print(f"\nkept C={best['C']} (threshold {best['threshold']:.3f})")
 Path(MODEL_FILE).parent.mkdir(exist_ok=True)
 joblib.dump({"vectorizer": vec, "model": best["model"], "C": best["C"], "threshold": best["threshold"]}, MODEL_FILE)
-report(save_predictions("validation", "keyword", val["id"], best["scores"] >= best["threshold"], best["scores"]))
+report(save_predictions("validation", "keyword", val["id"], output_rule(best["scores"], best["threshold"]), best["scores"]))
