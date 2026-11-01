@@ -4,12 +4,14 @@ Rows: "fixed" = guide + 5 fixed examples (the headline; frozen, decision 60); "z
 only, at the end; here just the script test). Each call replaces Claude Code's own instructions with our prompt and
 has no tools (rule 7). The answer is forced into a list of the 21 names (--json-schema), and a grant the safety
 filter refuses counts as wrong (rule 5). Answers are saved as they arrive, so a stopped run carries on where it left
-off. Stops before all Claude spending together passes the budget (rule 10). Test-set runs are added at the end
-(decision 52).
+off. Stops before all Claude spending together passes the budget (rule 10). Test-set runs happen only at the end, once
+every row is frozen (decision 52): they save answers in the shared predictions file and print no score.
 
 Usage: claude_baseline.py haiku fixed smoke      the script test: 20 validation grants
        claude_baseline.py haiku fixed early      Haiku's early check: 300 validation grants
        claude_baseline.py haiku zeroshot smoke   the zero-shot prompt on the same 20 grants
+       claude_baseline.py haiku fixed test       at the end only: all 972 test grants, saved in the shared format
+       claude_baseline.py haiku fixed repeat     after the test run: 50 of those grants again, to count changed answers
 """
 import argparse
 import json
@@ -24,7 +26,7 @@ import numpy as np
 from datasets import load_from_disk
 from tqdm import tqdm
 
-from score import metrics
+from score import metrics, save_predictions
 from settings import GUIDE_FILE, LABELS, SEED, SPLITS_DIR
 
 # ── Settings used only by this step (shared ones live in settings.py) ──
@@ -36,7 +38,8 @@ PROMPT_VERSION = "v3"                           # frozen (decision 60); bump if 
 SCHEMA = {"type": "object", "required": ["categories"],  # the answer form every call must fill (--json-schema)
           "properties": {"categories": {"type": "array", "items": {"type": "string", "enum": LABELS}}}}
 N_EXAMPLES = 5                                  # fixed examples, picked at random (decision 56)
-SETS = {"smoke": (0, 20), "early": (0, 300)}   # slices of one shuffle
+SETS = {"smoke": ("validation", 0, 20), "early": ("validation", 0, 300),   # slices of one shuffle of each split
+        "test": ("test", 0, None), "repeat": ("test", 0, 50)}              # test sets: at the end only (decision 52)
 WORKERS = 4                                     # calls at a time
 CALL_TIMEOUT = 120                              # seconds; a normal call takes 2–5
 BUDGET_USD = 120                                # all Claude runs together (rule 10)
@@ -48,14 +51,14 @@ cli.add_argument("model", choices=MODEL_IDS)
 cli.add_argument("row", choices=["fixed", "zeroshot"])
 cli.add_argument("set", choices=SETS)
 cli = cli.parse_args()
-if cli.row == "zeroshot" and cli.set != "smoke":
+if cli.row == "zeroshot" and cli.set == "early":
     raise SystemExit("zero-shot gets no tuning: it runs on the test set only, at the end (decision 58)")
 
 # ─────────────────────────────────────────────────────────────
 # 1. THE PROMPT: repeated parts first, so they are cached (rule 8)
 # ─────────────────────────────────────────────────────────────
 splits = load_from_disk(SPLITS_DIR)
-train, val = splits["train"], splits["validation"]
+train = splits["train"]
 cats = lambda row: "; ".join(l for l, y in zip(LABELS, row["label"]) if y)
 
 examples = ""
@@ -122,11 +125,14 @@ def parse(out):
     return [l for l in LABELS if l in items]
 
 
-start, end = SETS[cli.set]
-order = np.random.default_rng(SEED).permutation(len(val))[start:end]  # one fixed shuffle of validation
+split, start, end = SETS[cli.set]
+grants = splits[split]
+order = np.random.default_rng(SEED).permutation(len(grants))[start:end]  # one fixed shuffle of each split
+if cli.set == "repeat" and not (run_dir / "test.jsonl").exists():
+    raise SystemExit("run the test set first: the repeat check compares against its answers (rule 9)")
 out_file = run_dir / f"{cli.set}.jsonl"
 done = {json.loads(l)["id"] for l in out_file.open()} if out_file.exists() else set()
-todo = [int(i) for i in order if val[int(i)]["id"] not in done]
+todo = [int(i) for i in order if grants[int(i)]["id"] not in done]
 spent = sum(json.loads(l)["cost_usd"] for f in RUNS.glob("*/*.jsonl") for l in f.open())
 lock, state, failed = threading.Lock(), {"spent": spent, "largest": 0.05, "stopped": False}, []
 
@@ -136,11 +142,11 @@ def work(i):
         if state["spent"] + WORKERS * 2 * state["largest"] > BUDGET_USD:
             state["stopped"] = True
             return
-    out = ask(val[i]["text"])
+    out = ask(grants[i]["text"])
     if out is None:
-        failed.append(val[i]["id"])
+        failed.append(grants[i]["id"])
         return
-    rec = {"id": val[i]["id"], "answer": out["result"], "categories": parse(out),
+    rec = {"id": grants[i]["id"], "answer": out["result"], "categories": parse(out),
            "refused": out.get("stop_reason") == "refusal",
            "cost_usd": out["total_cost_usd"], "usage": out["usage"], "models": list(out["modelUsage"]),
            "thinking_tokens": sum(m.get("thinkingTokens", 0) for m in out["modelUsage"].values()),
@@ -163,21 +169,31 @@ if failed:
     print(f"{len(failed)} calls failed 3 times; run the same command again to retry them.")
 
 # ─────────────────────────────────────────────────────────────
-# 3. SCORE THE SET (validation slices only; test-set rows are written at the end in the shared format)
+# 3. REPORT: validation sets are scored here; test sets are saved for scoring at the end (decision 52)
 # ─────────────────────────────────────────────────────────────
 recs = {r["id"]: r for r in map(json.loads, out_file.open())}
-rows = [int(i) for i in order if val[int(i)]["id"] in recs]
-labels = np.array([val[i]["label"] for i in rows], dtype=int)
-pred = np.array([[l in (recs[val[i]["id"]]["categories"] or []) for l in LABELS] for i in rows], dtype=int)
-m = metrics(pred, labels)
+rows = [int(i) for i in order if grants[int(i)]["id"] in recs]
+pred = np.array([[l in (recs[grants[i]["id"]]["categories"] or []) for l in LABELS] for i in rows], dtype=int)
 r = list(recs.values())
-print(f"\n{len(rows)} of {len(order)} grants answered | micro-F1 {m['micro_f1']:.3f} | precision {m['precision']:.3f} | "
-      f"recall {m['recall']:.3f} | macro-F1 {m['macro_f1']:.3f}")
+if split == "validation":
+    m = metrics(pred, np.array([grants[i]["label"] for i in rows], dtype=int))
+    print(f"\n{len(rows)} of {len(order)} grants answered | micro-F1 {m['micro_f1']:.3f} | precision {m['precision']:.3f} | "
+          f"recall {m['recall']:.3f} | macro-F1 {m['macro_f1']:.3f}")
+else:                                           # no test score here: every row's is seen together (decision 52)
+    print(f"\n{len(rows)} of {len(order)} grants answered")
 print(f"invalid answers: {sum(x['categories'] is None for x in r)} (refused: {sum(x['refused'] for x in r)}) | "
       f"models: {sorted({n for x in r for n in x['models']})} | "
       f"cost ${sum(x['cost_usd'] for x in r):.4f} | thinking tokens per grant {np.mean([x['thinking_tokens'] for x in r]):.0f} | "
       f"seconds per call {np.mean([x['seconds'] for x in r]):.1f}")
 print(f"all Claude spending so far: ${state['spent']:.2f} of ${BUDGET_USD}")
+
+if cli.set == "test" and len(rows) == len(order):  # the shared file must cover every test grant once
+    print(f"saved {save_predictions('test', f'claude-{cli.model}-{cli.row}', [grants[i]['id'] for i in rows], pred)}")
+if cli.set == "repeat":                         # rule 9: how often the same grant gets a different answer
+    first = {x["id"]: x for x in map(json.loads, (run_dir / "test.jsonl").open())}
+    both = [g for g in recs if g in first]
+    changed = sum(recs[g]["categories"] != first[g]["categories"] for g in both)
+    print(f"repeat check: {changed} of {len(both)} grants got a different answer")
 
 if cli.set == "smoke":                          # read by eye: what Claude was shown, and a few of its answers
     if cli.row == "fixed":
@@ -186,4 +202,4 @@ if cli.set == "smoke":                          # read by eye: what Claude was s
             print(f"  {x['text'].splitlines()[0][:90]}  [{cats(x)}]")
     print("\nfirst 3 answers:")
     for i in rows[:3]:
-        print(f"  {val[i]['text'].splitlines()[0][:80]}\n    true: {cats(val[i])}\n    Claude: {recs[val[i]['id']]['answer']!r}")
+        print(f"  {grants[i]['text'].splitlines()[0][:80]}\n    true: {cats(grants[i])}\n    Claude: {recs[grants[i]['id']]['answer']!r}")
