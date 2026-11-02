@@ -1,0 +1,762 @@
+You assign HRCS Health Categories to UK health research grants. The official HRCS guidance is below; follow it.
+
+<hrcs_guidance>
+Source: HRCS Online, https://hrcsonline.net. The Health Research Classification System is maintained by the UKCRC Health Research Analysis Forum. Licensed under Creative Commons Attribution-NonCommercial-NoDerivs 2.0 England & Wales. Copied word for word on 2026-10-29: the health categories overview, three coding-advice pages and the 21 category pages.
+
+---
+
+# Health Categories
+The Health Categories dimension of the HRCS captures the area of health or disease being studied.
+There are 21 separate categories which encompass all diseases, conditions and areas of health. Each of the Health Categories includes research into both disease and normal function.
+e.g. studies of normal hepatic function and studies of liver cirrhosis will both be classified in the Oral and Gastrointestinal category.
+Of the 21 categories, 19 refer to specific areas of health or disease. The Generic Health Relevance category has been included to capture research that is relevant to all diseases and conditions or to general health and well-being. The Disputed Aetiology and Other category is included to code research that does not fit within the Generic Health Relevance category or the 19 health specific categories.
+For more advice, see our General Approach to Coding and Assigning Health Categories pages.
+The Health Categories are based on the World Health Organisation (WHO) International Classification of Diseases (ICD) codes which cover all areas of disease and ill health.
+## Summary of health categories
+### Blood
+Haematological diseases, anaemia, clotting (including thromboses and venous embolisms) and normal development and function of platelets and erythrocytes
+### Cancer and neoplasms
+All types of neoplasms, including benign, potentially malignant, or malignant (cancer) cancer growths. This includes leukaemia and mesothelioma.
+### Cardiovascular
+Coronary heart disease, diseases of the vasculature and circulation including the lymphatic system, and normal development and function of the cardiovascular system
+### Congenital disorders
+Physical abnormalities and syndromes that are not associated with a single type of disease or condition including Down’s syndrome and cystic fibrosis
+### Ear
+Deafness and normal ear development and function
+### Eye
+Diseases of the eye and normal eye development and function
+### Infection
+Diseases caused by pathogens, acquired immune deficiency syndrome, sexually transmitted infections and studies of infection and infectious agents
+### Inflammatory and immune system
+Rheumatoid arthritis, connective tissue diseases, autoimmune diseases, allergies and normal development and function of the immune system
+### Injuries and accidents
+Fractures, poisoning and burns
+### Mental health
+Depression, schizophrenia, psychosis and personality disorders, addiction, suicide, anxiety, eating disorders, learning disabilities, autistic spectrum disorders and studies of normal psychology, cognitive function and behaviour
+### Metabolic and endocrine
+Metabolic disorders (including Diabetes) and normal metabolism and endocrine development and function. This includes all research on the pineal, thyroid, parathyroid, pituitary and adrenal glands.
+### Musculoskeletal
+Osteoporosis, osteoarthritis, muscular and skeletal disorders and normal musculoskeletal and cartilage development and function
+### Neurological
+Dementias, transmissible spongiform encephalopathies, Parkinson’s disease, neurodegenerative diseases, Alzheimer’s disease, epilepsy, multiple sclerosis and studies of the normal brain and nervous system
+### Oral and gastrointestinal
+Inflammatory bowel disease, Crohn’s disease, diseases of the mouth, teeth, oesophagus, digestive system including liver and colon, and normal oral and gastrointestinal development and function
+### Renal and urogenital
+Kidney disease, pelvic inflammatory disease, renal and genital disorders, and normal development and function of male and female renal and urogenital system
+### Reproductive health and childbirth
+Fertility, contraception, abortion, in vitro fertilisation, pregnancy, mammary gland development, menstruation and menopause, breast feeding, antenatal care, childbirth and complications of newborns
+### Respiratory
+Asthma, chronic obstructive pulmonary disease, respiratory diseases and normal development and function of the respiratory system
+### Skin
+Dermatological conditions and normal skin development and function
+### Stroke
+Include both ischaemic stroke (caused by blood clots) and haemorrhagic stroke (caused by cerebral/intercranial haemorrhage).
+### Generic health relevance
+- Research applicable to all diseases and conditions or to general health and well-being of individuals.
+- Public health research, epidemiology and health services research that is not focused on specific conditions.
+- Underpinning biological, psychosocial, economic or methodological studies that are not specific to individual diseases or conditions
+### Disputed aetiology and other
+Conditions of unknown or disputed aetiology (such as chronic fatigue syndrome/myalgic encephalomyelitis), or research that is not of Generic Health Relevance and not applicable to the top 19 specific health categories with specific pathological / physiological determinants.
+
+Source: https://hrcsonline.net/health-categories/
+
+---
+
+# General approach to coding
+The strategic aim of coding using the Health Research Classification System is to capture the main objective of the research taking place during the lifetime of the award and not the background or future potential downstream applications of the research (often referred to in the first or last sentence of the abstract).
+Every research award is classified using the two dimensions of the coding system, both Research Activity Codes and Health Categories.
+All the assigned Research Activity Codes and Health Categories must also be allocated a percentage relevance to the research.
+The percentage allocated for each code represents a proportion of the total award value. The total percentage allocated on each dimension must add up to 100% to ensure there is no double counting of award funds.
+Use the minimum number of codes to reflect the main focus of the research.
+### Multiple codes and percentage allocations
+Multiple codes should be equally apportioned across the assigned codes e.g. two codes should be apportioned 50% each. This means apportioning equal percentages should be limited to the following options:
+Two codes = 50%, 50%
+Three codes = 33.33%, 33.33%, 33.33%
+Four codes = 25%, 25%, 25%, 25%
+Five codes = 20%, 20%, 20%, 20%, 20%
+Exceptions to this rule can only be made in circumstances where different emphases of research aims are specifically stated in the research objectives, and then only in the following combinations: 75%, 25%; 66.66%, 33.33%; 50%, 25%, 25%. No other percentage allocations should be used.
+Note we are aware that different grant management systems handle one third percentage allocations in different ways (e.g. 33, 33.3, 33.33, even 34/33/33). For analyses, we recommend using a minimum of two decimal places.
+See further guidance on:
+- Assigning Health Categories
+- Assigning Research Activity Codes
+
+Source: https://hrcsonline.net/getting-started/general-approach-to-coding/
+
+---
+
+# Assigning health categories
+The strategic aim of coding is to capture the main health focus of the research taking place during the lifetime of the award and not the background or future potential downstream applications of the research (often referred to in the first or last sentence(s) in the abstract). Diseases or conditions that may be listed within the background information or are listed as ‘being relevant’ to the study under investigation should not be included in the coding.
+Use the minimum number of codes to reflect the main focus of the research, while a maximum of five categories can be applied if a number of different areas of health or disease are included in the study. These should be equally apportioned unless clearly stated otherwise in the abstract e.g. two categories should be apportioned 50% each, three categories 33.33% each etc.
+The Generic Health Relevance category should be used in cases where the research is applicable to all diseases and condtions or to general health and wellbeing or directly applicable to more than five categories. If the main focus of the research is directed at several specified diseases and also has implications for many other conditions / general health, the appropriate specific categories should be used as well as applying the Generic Health Relevance category. See our guidance on case studies, exemplars and tracer conditions and sequelae, consequences and side effects for more details.
+Also note that the Disputed Aetiology and Other category is rarely used and only in specific circumstances.
+Health Categories should not be assigned to reflect mechanisms of pathogenesis or the site of a disease. Choose the Health Category associated with the purpose of the investigation or the overarching main disease. Many diseases and conditions share characteristics of more than one area of health (e.g. asthma is a respiratory disease and is also an autoimmune disease) and research may focus on a particular organ affected by a disease (e.g. pulmonary hypertension). However to ensure accurate and consistent coding it is important to follow the specific inclusion criteria listed in the Health Categories.
+e.g. asthma is coded as 100% Respiratory and should not be coded to Inflammatory and Immune System.
+e.g. pulmonary hypertension is classified 100% Cardiovascular and not Respiratory.
+
+Source: https://hrcsonline.net/getting-started/general-approach-to-coding/assigning-health-categories/
+
+---
+
+# Common mistakes
+The following examples are of common mistakes or frequently asked questions from those new to HRCS coding. This advice is also available as a PDF.
+Download the Common Mistakes PDF here
+### Contents
+- Allocating too many codes and unequal percentages
+- Falling for the investigator’s “sale pitch”
+- Assigning Health Categories to reflect all pathogenic components or symptoms
+- Basing the choice of Health Category solely on the organs affected by the disease
+- Using the Disputed Aetiology and Other category as a dumping ground when you are not sure how to classify a study
+- Automatically putting all inherited disorders in the Congenital Disorders category
+- Avoiding the 1 Underpinning code group if a study looks at pain, immune responses, pregnancy or ageing
+- Using the 3 Prevention code group for studies of the re-occurrence of a disease
+- Automatically putting trials into the 6 Treatment Evaluation code group
+- Use of 1.1 versus 2.1 for biological and endogenous factors
+- Using the treatments code groups (5 Treatment Development or 6 Treatment Evaluation) for preventative interventions (3 Prevention)
+- Inappropriate use of 4.1 and 4.2 in 4 Detection and Diagnosis code group
+### 1. Allocating too many codes and unequal percentages
+Advice: Unless there are very specific indications otherwise, you should apportion the percentages equally and allocate the minimum number of codes (1-2 (max. 4) Research Activity Codes and 1-5 Health Categories).
+Remember: There are simple rules to follow in order to enable the process to be repeated reliably by different coders.
+### 2. Falling for an investigator’s “sales pitch”
+Advice: Read the award abstract sceptically to find the main aim to be addressed during the lifetime of the award and ignore areas listed as ‘being relevant’ to the study. Often you can ignore the first paragraph about the past e.g.
+- “X is implicated in disorders of Y”
+- “X has been linked to Y”.
+Similarly the last paragraph about the future can be a distraction:
+- “it is hoped that X will also lead to novel therapeutic opportunities in Z”
+- “X could subsequently inform the development of Z”
+Remember: The coding should be based on the main aim and the work to be undertaken during the lifetime of the award.
+### 3. Assigning Health Categories to reflect all pathogenic components or symptoms
+Advice: Code for the main disease being studied and consult the specific inclusion/exclusion criteria listed on the website.
+Some example pitfalls are:
+- Asthma involves a disordered immune response but it is classified in Respiratory not in Inflammatory and Immune System.
+- Dementias involve disorders of mental health functioning but they are classified in Neurological not in Mental Health.
+- BSE is believed to involve an infectious agent but it is classified in Neurological not Infection.
+Remember: Choose the Health Category associated with the purpose of the investigation or the overarching main disease.
+### 4. Basing the choice of Health Category solely on the organs affected by the disease
+Advice: Code for the main disease being studied and consult the specific inclusion/exclusion criteria listed on the website
+Some example pitfalls are:
+- Studies of lung cancer are not classified as Respiratory but as Cancer.
+- Studies of respiratory tract infections are not classified in Respiratory but in Infection.
+Remember: Check the definition of the Health Category and the specific inclusion/exclusion criteria listed on the website.
+### 5. Using the Disputed Aetiology and Other category as a dumping ground when you are not sure how to classify a study
+Advice: The Disputed Aetiology and Other category should be used infrequently and in very specific circumstances for certain areas which are difficult to classify (e.g Gulf War Syndrome, some studies of social services).
+Remember: If a study has wide relevance to many health areas (more than five) then the Generic Health Relevance category is the one to consider assigning.
+### 6. Automatically putting all inherited disorders in the Congenital Disorders category
+Advice: The Congenital Disorders category covers physical abnormalities and congenital syndromes that are associated with multiple diseases and conditions e.g. cystic fibrosis. It excludes single disease disorders even when referred to as “congenital” e.g. a study of “congenital heart defects” present at birth should be coded as Cardiovascular. See guidance on congenital and multiple disorders for more details.
+Remember: Not all syndromes go in Congenital Disorders.
+### 7. Avoiding the 1 Underpinning code group if a study looks at pain, immune responses, pregnancy or ageing
+Advice: The 1 Underpinning code group is broad. In the original UK Health Research Analysis (2006) it accounted for more than one third of all funding. It covers studies in biology, psychology, economics, social science and chemistry. It also covers all studies of normal function, including pain, immune responses, pregnancy and ageing.
+Remember: Pain, immune responses, pregnancy and ageing are considered to be normal.
+### 8. Using the 3 Prevention code group for studies of the re-occurrence of a disease
+Advice: A study can describe itself as preventive but it may be focused on preventing the re-occurrence of an existing condition (secondary prevention). This is considered to be an extension of therapy and will usually be classified in the 6 Treatment Evaluation code group e.g. use of aspirin to prevent further adverse cardiovascular events or stroke in cardiovascular patients. See guidance on differentiating primary and secondary prevention for more details.
+Remember: The 3 Prevention code group is about the primary prevention of disease in healthy people.
+### 9. Automatically putting trials into the 6 Treatment Evaluation code group
+Advice: The 6 Treatment Evaluation code group covers all studies of therapeutic interventions in humans, often involving a clinical trial. But it does not include all trials in humans as there can be clinical trials testing the effects of preventive interventions, diagnostic devices and health services.
+Remember: The 6 Treatment Evaluation code group does not include all trials in humans.
+### 10. Use of 1.1 versus 2.1 for biological and endogenous factors
+Advice: Always remember the overarching code group criteria when coding studies of biological and endogenous factors:
+- Use 1 Underpinning group codes for all types of research into ‘normal’ functions and processes in ‘healthy’ humans or systems, i.e. research that underpins investigations into the cause or development of diseases.
+- Use 2 Aetiology group codes for the identification of determinants that are involved in the cause, risk or development of disease. Remember 2 Aetiology in HRCS goes beyond the dictionary definition; it also encompasses disease progression and life course.
+Then consider the specific criteria under the guidance for 1.1 Normal biological development and functioning and 2.1 Biological and endogenous factors. For example, studies in Cancer and Infection are rarely 1 Underpinning (with some exceptions). Studies of basic immune responses, pain, wound healing and pregnancy not linked to disease/conditions should not be coded under 2 Aetiology (see Common Mistake #07, above).
+Finally, always consider the primary aim of coding is to capture the main objective of the research taking place during the lifetime of the award with the minimum number of codes. While some studies of biological/endogenous factors can cover both 1 Underpinning and 2 Aetiology activities, it is more likely that initial underpinning investigations will precede research into causation and development.
+e.g. Studies coded as 2.1 often involve comparisons to ‘normal’ functions and processes (i.e. as case:control comparisons). However such comparisons should not automatically require addition of 1.1 for the involvement of ‘normal’ comparators unless the research also encompasses establishing what ‘normal’ function can be as well.
+Remember: Always consider the code group criteria before assigning sub-codes, and the context of the research. Underpinning covers studies of normal function that underpins subsequent aetiological study.
+### 11. Using the treatments code groups (5 Treatment Development or 6 Treatment Evaluation) for preventative interventions (3 Prevention)
+Advice: Some behaviours or conditions, such as smoking, obesity, alcohol consumption and drug misuse are considered a risk factor for other diseases. Therefore, interventions to reduce consumption or promote healthier behaviours should be coded as 3 Prevention, even if the target individual or group is already smoking, obese etc..
+Studies should be coded to 5 Treatment Development or 6 Treatment Evaluation when the focus is treatment of an newly manifested or existing behaviour-related diseases – such as lung cancer for smokers, heart disease for the obese or alcohol/drug addiction.
+5 Treatment Development or 6 Treatment Evaluation can also be used in cases of secondary prevention (see Common Mistake #08, above). Additional guidance on differentiating secondary and primary prevention is also available.
+Remember: consider the context of the study and what the ‘disease’ being treated is. Risk behaviours prior to disease should be coded to 3 Prevention, while treatments for risk-related diseases should be coded 5 Treatment Development or 6 Treatment Evaluation.
+### 12. Inappropriate use of 4.1 and 4.2 in 4 Detection and Diagnosis code group
+Advice: Use 4.1 Marker discovery for pre-clinical investigation of potential diagnostics, which can include patient samples if they are being used in the diagnostic development phase. Use 4.2 Marker evaluation for clinical and applied testing in humans, once verified in the laboratory, often in a trial or studies that involve a group of people.
+The term ‘biomarker’ can cause confusion when applying HRCS coding. In general a ‘biomarker’ refers to a specific molecule, gene or characteristic from which a physiological process can be identified. Use codes within 2 Aetiology for studies where markers are first identified (e.g. in epidemiology studies) or further assessed to determine how the molecule/gene/etc. contribute to the cause, risk or development of diseases. These studies will generally precede research to assess whether the biomarker can be then be used in a diagnostic setting.
+Remember: Use 4.1 for pre-clinical studies and 4.2 for clinical/applied studies. Not all ‘biomarker’ research is coded in 4 Detection and Diagnosis; preliminary identification and physiological assessment will typically be coded to 2 Aetiology.
+
+Source: https://hrcsonline.net/getting-started/general-approach-to-coding/common-mistakes/
+
+---
+
+# Blood
+## Main inclusion criteria
+Haematological diseases, anaemia, clotting (including thromboses and venous embolisms) and normal development and function of platelets and erythrocytes
+### Advice on health categories
+Not all haemopoietic cells or ‘blood cells’ are erythrocytes (red blood cells). This term is often used to encompass lymphocytes, macrophages, granulocytes and other white cell types. Check the context of the research.
+e.g. if the research relates to leukaemia it will be referring to lymphocytes etc. and not to erythrocytes and therefore should be coded as Cancer and not be coded as Blood.
+Studies investigating blood flow to the brain should be coded as Stroke.
+Blood clots (thromboses) can lead to wider cardiovascular complications and stroke. In these circumstances code to the primary condition of focus ignoring pathogenesis, but following rules for sequelae where appropriate.
+### Official terminology
+Full name of category | Short name | Unique ID
+Blood | Blood | HRCS_HC_01BLO
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter III: Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)
+## Related guidance
+- Sequelae, consequences and side effects
+- Infectious diseases
+- Thromboses and embolisms
+
+Source: https://hrcsonline.net/health-categories/blood/
+
+---
+
+# Cancer and neoplasms
+## Main inclusion criteria
+All types of neoplasms, including benign, potentially malignant, malignant (cancer) and canerous growths. This includes leukaemia and mesothelioma.
+### Advice on health categories
+Do not code to the site of the cancer. However if the research involves studying a condition that predisposes to cancer then it may be appropriate to code for this condition as well.
+e.g. The role of Barrett’s oesophagus in cancer would be 50% Oral and Gastrointestinal and 50% Cancer.
+Similarly research on pathogens associated with the development of cancer should be coded as 50% Cancer and 50% Infection.
+Studies of the normal role of oncogenes, tumour suppressor genes, and cell cycle checkpoints in a non diseased cell should be coded as 50% Generic Health Relevance and 50% Cancer.
+Excludes general studies of angiogenesis which should be coded as Cardiovascular. However the development of anti-angiogenic drugs to inhibit tumour growth would be coded as Cancer.
+Excludes normal studies of cell cycle and DNA replication and repair which should be coded as Generic.
+### Official terminology
+Full name of category | Short name | Unique ID
+Cancer | Cancer | HRCS_HC_02CAN
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter II: Neoplasms (C00-D48)
+## Related guidance
+- Cachexia in chronic diseases and chemotherapy
+- Smoking and tobacco
+- Sequelae, consequences and side effects
+- Physical activity and exercise
+- Diet, obesity and nutrition
+- Cancer and conditions predisposing to cancer
+- Alcohol consumption
+- Pollution, radiation and environmental hazards
+
+Source: https://hrcsonline.net/health-categories/cancer-and-neoplasms/
+
+---
+
+# Cardiovascular
+## Main inclusion criteria
+Coronary heart disease, diseases of the vasculature and circulation including the lymphatic system, and normal development and function of the cardiovascular system.
+### Advice on health categories
+Includes general circulation research, vasculitis and general angiogenesis studies. Includes atherosclerosis and pulmonary hypertension. Includes congenital heart disorders. Excludes studies investigating blood flow to the brain which should be coded as Stroke. Excludes angiogenesis studies which relate to a diseased state (e.g. development of anti-angiogenic drugs to inhibit tumour growth which would be coded as Cancer).
+### Official terminology
+Full name of category | Short name | Unique ID
+Cardiovascular | Cardio | HRCS_HC_03CAR
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter IX: Diseases of the circulatory system (I00-I99)
+## Related guidance
+- Vasculitis
+- Smoking and tobacco
+- Sequelae, consequences and side effects
+- Pulmonary hypertension
+- Foetal development, pregnancy and ‘in utero’ studies
+- Physical activity and exercise
+- Diet, obesity and nutrition
+- Congenital disorders and inherited syndromes
+- Alcohol consumption
+- Thromboses and embolisms
+
+Source: https://hrcsonline.net/health-categories/cardiovascular/
+
+---
+
+# Congenital disorders
+## Main inclusion criteria
+Physical abnormalities and syndromes that are not associated with a single type of disease or condition including Down’s syndrome and cystic fibrosis.
+### Advice on health categories
+Includes physical malformation and congenital syndromes that are associated with multiple diseases and conditions.
+Excludes inherited single disease disorders (even when referred to as ‘congenital’) which should be coded under the appropriate Health Category.
+### Official terminology
+Full name of category | Short name | Unique ID
+Congenital | Congenital | HRCS_HC_04CON
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter XVII: Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)
+## Related guidance
+- Congenital disorders and inherited syndromes
+- Cerebral palsy and spina bifida
+- Pollution, radiation and environmental hazards
+- Infectious diseases
+- Cell cycle and DNA repair
+
+Source: https://hrcsonline.net/health-categories/congenital-disorders/
+
+---
+
+# Disputed aetiology and other
+## Main inclusion criteria
+Conditions of unknown or disputed aetiology (such as chronic fatigue syndrome/myalgic encephalomyelitis), or research that is not of Generic Health Relevance and not applicable to the top 19 health categories with specific pathological / physiological determinants.
+### Advice on health categories
+The Disputed Aetiology and Other category is rarely used and should only be used in specific circumstances that cannot be attributed to any of the 19 named health categories or Generic Health Relevance. There are three such circumstances suggested here. Research that does not fall into the preceding 20 health categories or these specified uses of Other should be considered outside of scope for HRCS coding.
+(1) Unknown or disputed Aetiology The most frequent circumstance where coding to Other is appropriate are conditions of unknown or disputed aetiology. Conditions include:
+- Chronic Fatigue Syndrome / Myalgic Encephalopathy / Post-Viral Fatigue Syndrome / Chronic Fatigue Immune Dysfunction Syndrome: It is not known how these conditions are triggered; some experts have suggested they are a result of a virus but this does not explain why symptoms get worse after the virus has resolved. The aetiology of the condition has not been agreed.
+- Gulf war syndrome/illness: This is a multi-symptom disorder affecting returning military personnel and civilians from the Gulf war. The condition has long lasting symptoms and has been recognised by the Department of Defence but there is not agreement on the underlying cause or a formal definition of the condition. Note this is a separate condition distinct from Post-traumatic Stress Disorder (PTSD, which should be coded as Mental Health).
+(2) Animal Welfare In general studies of animal welfare should be assigned the Other category. This applies to studies with direct focus on laboratory animals and the use of animals in human health research. The wider field of veterinary research is outside the scope of HRCS.
+See the guidance topic on Animal Welfare for further details.
+(3) Social Services Research Not all social services research will be within scope of HRCS. Only social services research with a health relevant component should be classified, and most health-relevant social research will be applicable to the general population and therefore classified under Generic Health Relevance.
+However Other also includes some types of social services research focuses on specific ‘healthy’ at risk groups that is not of relevance to the general population. Examples of such research include:
+- Research into services for young people at risk of domestic violence.
+- Research into services for minorities at risk of hate crime.
+### Official terminology
+Full name | Short Name | Unique ID
+Disputed aetiology and other | Other | HRCS_HC_21OTH
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter XVIII: Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99)
+## Related guidance
+- Substance misuse and addiction
+- Animal welfare and replacing animals in research
+
+Source: https://hrcsonline.net/health-categories/disputed-aetiology-other/
+
+---
+
+# Ear
+## Main inclusion criteria
+Deafness and normal ear development and function.
+### Advice on health categories
+Includes normal studies on this organ or the condition of deafness.
+Studies that involve the auditory nerve leading to the brain may be double coded as 50% Neurological and 50% Ear as appropriate.
+Excludes mapping of hearing in regions of the brain in which case the Neurological category should be applied.
+### Official terminology
+Full name of category | Short name | Unique ID
+Ear | Ear | HRCS_HC_05EAR
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter VIII: Diseases of the ear and mastoid process (H60-H95)
+## Related guidance
+- Ear and hearing
+- Vertigo and disorders of balance
+
+Source: https://hrcsonline.net/health-categories/ear/
+
+---
+
+# Eye
+## Main inclusion criteria
+Diseases of the eye and normal eye development and function.
+### Advice on health categories
+Includes normal studies on this organ or the condition of blindness.
+Studies that involve the optic nerve leading to the brain may be double coded as 50% Neurological and 50% Eye as appropriate.
+Excludes mapping of vision in regions of the brain in which case the Neurological category should be applied.
+### Official terminology
+Full name of category | Short name | Unique ID
+Eye | Eye | HRCS_HC_06EYE
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter VII: Diseases of the eye and adnexa (H00-H59)
+## Related guidance
+- Eye and vision
+
+Source: https://hrcsonline.net/health-categories/eye/
+
+---
+
+# Generic health relevance
+## Main inclusion criteria
+- Research applicable to all diseases and conditions or to general health and well-being of individuals.
+- Public health research, epidemiology and health services research that is not focused on specific conditions.
+- Underpinning biological, psychosocial, economic or methodological studies that are not specific to individual diseases or conditions.
+### Advice on health categories
+There are four main circumstances where the Generic Health Relevance category is most applicable:
+- Research that is relevant to all diseases and conditions or to general health and well-being. For example, many studies with research activity coded as 1 Underpinning involves study of normal processes that may be relevant to all diseases and conditions e.g. cell cycle or DNA repair, developmental biology.
+- Any research that cannot be attributed to a particular disease or condition or to normal function of a specific type of cell or system, defined by the top 19 health categories. e.g. Studies of wounds and healing without a specified tissue type or specifically caused by Accident or Injuries.
+- If research is judged relevant to more than five Health Categories then these should be substituted for 100% Generic Health Relevance.
+- As an additional code for studies with a disease(s)/condition(s) of focus which also has relevance to many other diseases/conditions. This final circumstance has considerable scope, so additional guidance is given below.
+### Generic Health Relevance as an additional code
+If the main focus of the research is directed at several specified diseases and also has implications for many other conditions, the appropriate specific Health Categories should be used as well as applying the Generic category. (Note that this does not apply to diseases that may be listed within the background information or are noted as ‘being relevant’ to the study under investigation; many awards will reference multiple conditions to provide a context for the research, but always apply coding based on the lifetime of the award – (see the coding guidance on assigning health categories.)
+Examples of this use of Generic Health Relevance coding appears across the HRCS guidance, including:
+- Cancer studies – Studies of the normal role of oncogenes and tumour suppressor genes in a non-diseased cell may be coded as 50% Cancer and neoplasms and 50% Generic.
+- Pollution – If there is no other indication of the health effects of air pollution, code 50% Respiratory for the direct effects on the lungs and 50% Generic for other effects.
+- Environmental radiation – Studies of the effects of environmental radiation exposure should be coded 33.33% Cancer, 33.33% Congenital Disorders and 33.33% Generic.
+- Studies where a particular condition is used as an exemplar or case study to evaluate models, services and systems may also be coded as Generic – see Case studies, exemplars and tracer conditions guidance for more details.
+### Official terminology
+Full name of category | Short name | Unique ID
+Generic health relevance | Generic | HRCS_HC_20GEN
+### Related external links
+None.
+## Related guidance
+- Wounds and healing
+- Developmental biology
+- Case studies, exemplars or tracer conditions
+- Cancer and conditions predisposing to cancer
+- Pollution, radiation and environmental hazards
+- Cell cycle and DNA repair
+
+Source: https://hrcsonline.net/health-categories/generic-health-relevance/
+
+---
+
+# Infection
+## Main inclusion criteria
+Diseases caused by pathogens, acquired immune deficiency syndrome, sexually transmitted infections and studies of infection and infectious agents.
+### Advice on health categories
+Infection should be used for all research on pathogens and diseases caused by infection. These studies should be coded as 100% Infection and should not also be coded to the target disease site.
+e.g. infection by malaria parasite should be coded as 100% Infection and not Blood.
+e.g. respiratory infections should be coded as 100% Infection and not Respiratory.
+Studies involving acute immune response to infection should be coded as Infection. However studies of natural tolerance and immunity to infections should be coded as 100% Inflammatory and Immune System.
+Excludes TSEs, CJD and prion studies which should be coded as 100% Neurological regardless of whether the study is investigating transmission or mechanism of disease.
+Infections can often follow or precede other diseases or conditions. There is general guidance on sequelae and side effects of disease, but there are also several examples across the existing HRCS guidance where addition of further health categories would be recommended:
+- Studies of the downstream consequences of infection may also be coded to the disease or condition under investigation. e.g. surgery on diseased liver from Hepatitis C infection should be coded as 50% Infection and 50% Oral and Gastrointestinal.
+- Studies that involve infection of a specific target patient group should be coded as 50% Infection and 50% to the appropriate health category. e.g. respiratory infection in people with cystic fibrosis should be coded as 50% Infection and 50% Congenital Disorders.
+- General studies on sexual health, including sexually transmitted infections (STIs), should be coded as 50% Infection and 50% Reproductive Health and Childbirth, but only if there is no named pathogen. If a pathogen is specified, use 100% Infection. e.g. Studies of total STI rate in teenagers should be coded as 50% Infection, 50% Reproduction. e.g. Studies of gonorrhea in teenagers should be coded as 100% Infection.
+- Studies of cancer causing pathogens should be coded as 50% Cancer and 50% Infection.
+- Sepsis should be coded as 50% Infection and 50% Inflammatory and Immune System.
+### Official terminology
+Full name of category | Short name | Unique ID
+Infection | Infection | HRCS_HC_07INF
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter I: Certain infectious and parasitic diseases (A00-B99)
+## Related guidance
+- Sexual health
+- Sequelae, consequences and side effects
+- Sepsis
+- Prions – studies of TSEs, BSE, CJD and prion protein
+- Cancer and conditions predisposing to cancer
+- Animal welfare and replacing animals in research
+- Infectious diseases
+
+Source: https://hrcsonline.net/health-categories/infection/
+
+---
+
+# Inflammatory and immune system
+## Main inclusion criteria
+Rheumatoid arthritis, connective tissue diseases, autoimmune diseases, allergies and normal development and function of the immune system.
+### Advice on health categories
+Includes listed immune diseases and studies of normal immune response.
+Also includes natural tolerance and immunity to infections. However studies involving the acute immune response to infection should be coded as Infection; in general, any research with a specified infectious / pathogenic agent should only be coded as Infection.
+Most diseases are associated with an inflammatory response. In general, code to the disease under investigation and not to the accompanying inflammatory response. The most common examples of this approach are:
+- Asthma – which should be coded as Respiratory. However studies of allergies in asthma sufferers can be coded as 50% Inflammatory and Immune System for allergies and 50% Respiratory for asthma.
+- Atherosclerosis – which is coded as 100% Cardiovascular regardless of whether the investigation involves immune cells.
+The exception to this rule is Sepsis, which should be coded 50% Infection and 50% Inflammatory and Immune System.
+### Official terminology
+Full name of category | Short name | Unique ID
+Inflammatory and immune system | Immune | HRCS_HC_08IMM
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter III: Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)
+## Related guidance
+- Vasculitis
+- Sepsis
+- Atherosclerosis
+- Infectious diseases
+
+Source: https://hrcsonline.net/health-categories/inflammatory-and-immune-system/
+
+---
+
+# Injuries and accidents
+## Main inclusion criteria
+Fractures, poisoning and burns.
+### Advice on health categories
+This category is designed to capture research directly relating to external accidents, injuries and physical trauma and should not include endogenous studies of damage such as ischemic injury.
+Intervention studies preventing or treating falls should be coded to Injuries and Accidents. It may be appropriate to also code for specific conditions if the study involves a particular patient group.
+Excludes studies of wound healing, unless the wound was acquired by accident.
+### Official terminology
+Full name of category | Short name | Unique ID
+Injuries and accidents | Injuries | HRCS_HC_09INJ
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter XIX: Injury, poisoning and certain other consequences of external causes (S00-T98) International Classification of Diseases (ICD 10 v2016) – Chapter XX: External causes of morbidity and mortality (V01-Y98)
+## Related guidance
+- Wounds and healing
+
+Source: https://hrcsonline.net/health-categories/injuries-and-accidents/
+
+---
+
+# Mental health
+## Main inclusion criteria
+Depression, schizophrenia, psychosis and personality disorders, addiction, suicide, anxiety, eating disorders, learning disabilities, bipolar disorder, autistic spectrum disorders and studies of normal psychology, cognitive function and behaviour.
+### Advice on health categories
+Mental Health should be used for all normal cognitive research categorised to 1.2 Psychological i.e. behaviour learning, memory, language, perception etc.
+Studies dealing with the brain of individuals with a psychological condition listed in the Mental Health category should be coded as 100% Mental Health and not as Neurological.
+### Official terminology
+Full name of category | Short name | Unique ID
+Mental health | Mental | HRCS_HC_10MEN
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter V: Mental and behavioural disorders (F00-F99)
+## Related guidance
+- Substance misuse and addiction
+- Sleep and studies of sleep disorders
+- Sequelae, consequences and side effects
+- Pain
+- Neuropsychology
+- Diet, obesity and nutrition
+- Vertigo and disorders of balance
+- Alcohol consumption
+
+Source: https://hrcsonline.net/health-categories/mental-health/
+
+---
+
+# Metabolic and endocrine
+## Main inclusion criteria
+Metabolic disorders (including Diabetes) and normal metabolism and endocrine development and function. This includes all research on the pineal, thyroid, parathyroid, pituitary and adrenal glands.
+### Advice on health categories
+This category includes basic studies of metabolism but not generic signalling pathways involving kinases.
+This includes studies of metabolic regulation – the means by which nutrients are converted into energy – and the conditions which affect the ability of these processes to be carried out. For example regulation of blood lipids and cholesterol are classified as Metabolic and Endocrine.
+Studies on nutrition, diet and obesity and/or physical activity and exercise are context based and should only be coded as Metabolic if they relate to metabolism.
+e.g. diet and exercise interventions specifically aimed at reducing cholesterol levels.
+This category also includes normal function and disorders of the endocrine system, including pineal, thyroid, parathyroid, pituitary and adrenal glands, and most hormones and hormone receptor studies. There are however some notable exceptions:
+- Studies of reproductive hormones, including their role in fertility, menstruation, pregnancy and menopause, are usually coded as Reproductive Health and Childbirth and not Metabolic. Studies relating to the development of male and female reproductive organs should be coded as Renal and Urogenital.
+- Studies of the pancreas and its role in metabolism, including regulation of blood sugar and Diabetes, should be coded as Metabolic. Studies of the pancreas and its role in digestion, including pancreatic juices, should be coded as Oral and Gastrointestinal.
+- Studies of the hypothalamus and its role in metabolism should be coded as Metabolic. Studies of the hypothalamus as part of the brain and central nervous system should be coded as Neurological.
+### Official terminology
+Full name of category | Short name | Unique ID
+Metabolic and endocrine | Metabolic | HRCS_HC_11MET
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter IV: Endocrine, nutritional and metabolic diseases (E00-E90)
+## Related guidance
+- Sequelae, consequences and side effects
+- Physical activity and exercise
+- Diet, obesity and nutrition
+- Cholesterol
+
+Source: https://hrcsonline.net/health-categories/metabolic-and-endocrine/
+
+---
+
+# Musculoskeletal
+## Main inclusion criteria
+Osteoporosis, osteoarthritis, muscular and skeletal disorders and normal musculoskeletal and cartilage development and function.
+### Advice on health categories
+Includes research into limbs and the face.
+Studies of musculoskeletal pain, such as fibromyalgia, should be classified as Musculoskeletal. However studies focussed on pain pathways in the nervous system would be classified as Neurological and pain perception would be classified as Mental Health.
+### Official terminology
+Full name of category | Short name | Unique ID
+Musculoskeletal | Muscle | HRCS_HC_12MUS
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter XIII: Diseases of the musculoskeletal system and connective tissue (M00-M99)
+## Related guidance
+- Pain
+- Muscle and neuromuscular junction
+
+Source: https://hrcsonline.net/health-categories/musculoskeletal/
+
+---
+
+# Neurological
+## Main inclusion criteria
+Dementias, transmissible spongiform encephalopathies, Parkinson’s disease, neurodegenerative diseases, Alzheimer’s disease, epilepsy, multiple sclerosis and studies of the normal brain and nervous system.
+### Advice on health categories
+This category is suitable for studies of the ‘wiring’ of the brain.
+Includes studies of TSEs, CJD and prion protein.
+Studies on circadian rhythm are often but not always Neurological.
+Other conditions where disruption to circadian rhythm is linked to disease should be coded to the appropriate health category. For example, circadian influence on immune cells in rheumatoid arthritis would be coded as Inflammatory and Immune System.
+Studies on headaches and migraine are often but not always Neurological.
+Headaches resulting from other conditions may require alternative or additional health categories, following the rules for sequelae. For example, headaches resulting from visual impairments can be coded 50% Eye, 50% Neurological.
+Studies of the Blood-Brain Barrier, vascular cognitive impairments and vascular dementia should be coded as Neurological unless there is significant additional emphasis on either circulation (50% Cardiovascular, 50% Neurological) or the blood flow to the brain (50% Neurological, 50% Stroke).
+Excludes studies dealing with the brain of individuals with a psychological condition listed in the Mental Health category which should be coded as 100% Mental Health.
+### Official terminology
+Full name of category | Short name | Unique ID
+Neurological | Neuro | HRCS_HC_13NEU
+### Related external links
+International Classifications of Diseases (ICD 10 v2016) – Chapter VI: Diseases of the nervous system (G00-G99)
+## Related guidance
+- Sleep and studies of sleep disorders
+- Prions – studies of TSEs, BSE, CJD and prion protein
+- Pain
+- Neuropsychology
+- Muscle and neuromuscular junction
+- Eye and vision
+- Ear and hearing
+- Cerebral palsy and spina bifida
+- Vertigo and disorders of balance
+
+Source: https://hrcsonline.net/health-categories/neurological/
+
+---
+
+# Oral and gastrointestinal
+## Main inclusion criteria
+Inflammatory bowel disease, Crohn’s disease, diseases of the mouth, teeth, oesophagus, digestive system including liver and colon, and normal oral and gastrointestinal development and function.
+### Advice on health categories
+Includes dental research and studies on the mouth, throat, stomach, liver, pancreas (not diabetes/insulin related), gut and colon.
+Also suitable for problems linked to food absorption by the gut.
+### Official terminology
+Full name of category | Short Name | Unique ID
+Oral and gastrointestinal | Oral | HRCS_HC_14ORA
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter XI: Diseases of the digestive system (K00-K93)
+## Related guidance
+- Liver
+- Sequelae, consequences and side effects
+- Pain
+- Physical activity and exercise
+- Diet, obesity and nutrition
+- Cancer and conditions predisposing to cancer
+- Alcohol consumption
+
+Source: https://hrcsonline.net/health-categories/oral-and-gastrointestinal/
+
+---
+
+# Renal and urogenital
+## Main inclusion criteria
+Kidney disease, pelvic inflammatory disease, renal and genital disorders, and normal development and function of male and female renal and urogenital system.
+### Advice on health categories
+Includes female and male sexual organs and associated diseases where the research is not directly linked to reproductive issues such as developmental studies.
+### Official terminology
+Full name of category | Short name | Unique ID
+Renal and urogenital | Renal | HRCS_HC_15REN
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter XIV: Diseases of the genitourinary system (N00-N99)
+
+Source: https://hrcsonline.net/health-categories/renal-and-urogenital/
+
+---
+
+# Reproductive health and childbirth
+## Main inclusion criteria
+Fertility, contraception, abortion, in vitro fertilisation, pregnancy, mammary gland development, menstruation and menopause, breast feeding, antenatal care, childbirth, postnatal care and complications of newborns.
+### Advice on health categories
+Includes studies of ante and post natal care such as issues affecting newborns.
+Includes studies of the effects of exposure to factors while in utero if focussed on the foetus or newborns. If the study is about the long term effects on children or adults, where the foetus is not involved in the investigation, the Reproductive Health and Childbirthcategory should not be used.
+Studies of sexual health should be coded 50% Reproductive Health and Childbirth and 50% Infection, unless the study involves a specified pathogenic agent (such studies should be coded as 100% Infection).
+May include studies of reproductive hormones.
+Excludes basic developmental studies in non-human models.
+### Official terminology
+Full name of category | Short name | Unique ID
+Reproductive health and childbirth | Reproduction | HRCS_HC_16REP
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter XV: Pregnancy, childbirth and the puerperium (O00-O99) International Classification of Diseases (ICD 10 v2016) – Chapter XVI: Certain conditions originating in the perinatal period (P00-P96)
+## Related guidance
+- Sexual health
+- Sequelae, consequences and side effects
+- Foetal development, pregnancy and ‘in utero’ studies
+- Developmental biology
+- Infectious diseases
+
+Source: https://hrcsonline.net/health-categories/reproductive-health-and-childbirth/
+
+---
+
+# Respiratory
+## Main inclusion criteria
+Asthma, chronic obstructive pulmonary disease (COPD), respiratory diseases and normal development and function of the respiratory system.
+### Advice on health categories
+Includes studies of the upper and lower respiratory tract, including nasal cavity, sinuses, larynx, vocal cords, trachea and lungs. Studies of the elements of the throat shared with the digestive system (e.g. pharynx and epiglottis) may be coded as Oral and Gastrointestinal depending on the context of the research.
+Studies of allergies in asthma sufferers can be coded as 50% Inflammatory and Immune System for allergies and 50% Respiratory for asthma.
+Excludes pulmonary hypertension which should be coded as Cardiovascular.
+Excludes respiratory infections which should be coded as Infection.
+Note there is specific guidance for coding research related to smoking, tobacco and smoking-related diseases.
+### Official terminology
+Full name of category | Short Name | Unique ID
+Respiratory | Respiratory | HRCS_HC_17RES
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter X: Diseases of the respiratory system (J00-J99)
+## Related guidance
+- Smoking and tobacco
+- Pulmonary hypertension
+- Pollution, radiation and environmental hazards
+
+Source: https://hrcsonline.net/health-categories/respiratory/
+
+---
+
+# Skin
+## Main inclusion criteria
+Dermatological conditions and normal skin development and function.
+### Advice on health categories
+Many dermatological conditions are associated with an inflammatory or allergic response. Code to the disease under investigation and not to the accompanying response. This means conditions such as psoriasis and eczema would normally be coded as 100% Skin. However studies of allergies in patients with dermatological conditions can be coded as 50% Inflammatory and Immune System for allergies and 50% Skin.
+Similarly infections of the skin should be coded as 100% Infection. However studies of skin infections for patients with pre-existing dermatological conditions can be coded as 50% Infection and 50% Skin.
+Studies of ulcers would normally be coded to Skin. However in studies of ulcers in a particular patient population, such as diabetics, the guidance for sequelae and side effects of disease should be followed and the study should be coded to include the additional health category for the underlying condition:
+e.g. Venous ulcers would be coded 50% Skin, 50% Cardiovascular.
+e.g. Diabetic skin ulcers would be coded 50% Skin, 50% Metabolic and Endocrine.
+### Official terminology
+Full name of category | Short name | Unique ID
+Skin | Skin | HRCS_HC_18SKI
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter XII: Diseases of the skin and subcutaneous tissue (L00-L99)
+## Related guidance
+- Wounds and healing
+
+Source: https://hrcsonline.net/health-categories/skin/
+
+---
+
+# Stroke
+## Main inclusion criteria
+Includes both ischaemic stroke (caused by blood clots) and haemorrhagic stroke (caused by cerebral/intercranial haemorrhage).
+### Advice on health categories
+When coding research involving circulation or blood flow, only studies investigating blood flow to the brain should be coded as Stroke.
+While general blood circulation and cardiovascular disease research should be coded as Cardiovascular, research involving blood flow to brain should be coded as Stroke. Therefore haemorrhagic stroke will generally be coded as 100% Stroke unless there is a clear pre-existing condition, in which case the guidance on sequelae should be followed:
+e.g. Research on stroke resulting from brain haemorrhage should be coded as 100% Stroke.
+e.g. Research on stroke as the direct result of pre-existing circulatory disorder should be coded as 50% Cardiovascular and 50% Stroke.
+While general studies of clotting and thromboses should be coded as Blood, research involving blood flow to brain should be coded as Stroke. Therefore ischaemic stroke will generally be coded as 100% Stroke unless there is a clear pre-existing condition, in which case the guidance on sequelae should be followed:
+e.g. Research on stroke resulting from thrombosis should be coded as 100% Stroke.
+e.g. Research on stroke as the direct result of pre-existing clotting disorder should be coded as 50% Blood and 50% Stroke.
+Similarly, research on symptoms of stroke on stroke survivors should also be coded as Stroke. However, the specific symptoms (e.g. behavioural changes, mobility issues, further circulatory problems) and interventions used to treat them may be applicable to other health categories too. Use the guidance on case studies and/or sequelae to assess whether alternative or additional coding is required.
+### Official terminology
+Full name of category | Short name | Unique ID
+Stroke | Stroke | HRCS_HC_19STR
+### Related external links
+International Classification of Diseases (ICD 10 v2016) – Chapter IX: Diseases of the circulatory system (I00-I99)
+## Related guidance
+- Smoking and tobacco
+- Physical activity and exercise
+- Diet, obesity and nutrition
+- Alcohol consumption
+- Thromboses and embolisms
+
+Source: https://hrcsonline.net/health-categories/stroke/
+</hrcs_guidance>
+
+<examples>
+Five grants coded by HRCS coders:
+<example>
+<grant>
+CRUKD/14/004 ComPAKT A Phase I multi-centre trial of the combination of AZD5363 (AKT inhibitor) and olaparib (PARP inhibitor) in patients with advanced solid tumours
+Background Despite impressive response rates observed in advanced BRCA1/2 mutant cancers, the remissions achieved with poly(ADP-ribose) polymerase (PARP) inhibitor monotherapy have not been durable, and benefit in sporadic cancers that may harbour homologous recombination (HR) defects, such as triple negative breast cancer (TNBC) remains unclear. There has also been modest clinical activity reported with single agent phosphatidylinositol-3-kinase (PI3K)-AKT pathway inhibitors in early phase studies, supporting the use of these agents in combination regimens. The rationale for the combined inhibition of PARP and the PI3K-AKT pathway as an anticancer strategy is supported by recent preclinical studies demonstrating synergistic antitumour effects in BRCA mutant tumours (Juvekar et al, Cancer Discovery 2012). Also, PI3K-AKT pathway inhibition was demonstrated to impair BRCA1/2 expression, with subsequent sensitisation to PARP inhibition in TNBC without BRCA mutations (Ibrahim et al, Cancer Discovery 2012). Aims The primary aim is to determine the safety and tolerability of the PARP inhibitor olaparib in combination with the AKT inhibitor AZD5363, and to establish a maximum tolerated dose (MTD) in patients with advanced solid tumours, including BRCA1/2-mutant cancers and sporadic tumours. The secondary aims are to assess the pharmacokinetic-pharmacodynamic (PK-PD) profile, and preliminary antitumour activity of the combination. Methods A phase I trial will be conducted in 2 parts. (A) Dose escalation phase: AZD5363 will be given twice-daily in two parallel intermittent schedules (4-days-on, 3-days-off; 2-days-on, 5-days-off) with continuous olaparib (300mg bd). Intrapatient dose escalation of AZD5363 will be pursued through 3 dose levels up to the MTD. (B) Once the MTD is reached for both arms, the schedule with the optimum safety and PK/PD profile will be selected for the dose expansion phase, which will comprise 2 arms: (1) Patients with advanced BRCA1/2 mutant cancers; (2) Patients with advanced sporadic cancers not known to harbour germline BRCA1/2 mutations, but which may harbour HR defects, e.g. advanced TNBC, castration-resistant prostate cancer and high-grade serous ovarian cancer, and cancers with somatic mutations or other aberrations known to result in PI3K-AKT pathway hyperactivation. How the results of this research will be used This phase I trial will establish the MTD of the combination of olaparib and AZD5363. Subsequent tumour-specific phase II studies will be conducted depending on findings from this study. If successful, the intrapatient dose escalation trial design may be employed for the conduct of other phase I combination studies.
+</grant>
+<categories>cancer and neoplasms</categories>
+</example>
+<example>
+<grant>
+Antibiotics and antiseptics for venous leg ulcers (review update)
+Venous leg ulcers (VLUs) have been estimated to affect 0.1 to 1.1% of people in developed countries.1 VLUs are painful and lead to restriction of work and leisure activities and social isolation.2 They are also costly to treat: a recent evaluation conducted in Germany estimated the total mean annual cost of illness for leg ulcers as EUR 9060 per patient (price year 2006).3 It is thought that the presence of infection leads to delayed healing; it is thus crucial to assess the effectiveness of interventions designed to combat infection on VLU healing.Our Cochrane review ‘Antibiotics and antiseptics for venous leg ulcers’ was last updated in 2010. We included 25 trials reporting 32 comparisons and found a lack of reliable evidence in relation to systemic antibiotics for promoting healing in VLUs. We found some evidence to support cadexomer iodine but no good quality evidence regarding other topical preparations. We know that there have been at least 15 new trials published since 2010. We believe it is necessary to update this highly accessed review (3864 abstract downloads in 2012) to provide decision-makers with the most up-to-date evidence in this complex high-cost area.1.Graham ID Harrison MB Nelson EA Lorimer K Fisher A. Prevalence of lower-limb ulceration: a systematic review of prevalence studies. Advances in Skin and Wound Care 2003;16(6):305-16.2.Herber OR Schnepp W Rieger MA. A systematic review on the impact of leg ulceration on patients quality of life. Health and Quality of Life Outcomes 2007;5(44).3.Augustin M Brocatti LK Rustenbach SJ Schäfer I Herberger K. Cost-of-illness of leg ulcers in the community. International Wound Journal 2012:doi: 10.1111/j.1742-481X.2012.01089.x.
+</grant>
+<categories>cardiovascular; inflammatory and immune system; skin</categories>
+</example>
+<example>
+<grant>
+The experiences of community health professionals following their involvement in providing palliative care to a child with cancer within the family home.
+The proposed study aims to compare the perceived role of the GP in providing palliative care for the child with cancer with the perceptions of bereaved families.The key aims are to identify; discrepancies between family and GP perceptions, areas where the GP role could be enhanced through education and training, findings that could be transferable to palliative care generally and ways of enhancing the role of the Macmillan team in supporting GPs in this arena. Data collection methods include semi-structured interviews and Q-methodology.The findings will have a direct impact on my role as a paediatric Macmillan nurse, informing practice through an increased awareness of the family’s experience and identifying, and addressing, areas where practice could be enhanced.In addition the lectureship will provide me with an opportunity to build on my research knowledge and experience and further develop my clinical skills.
+</grant>
+<categories>cancer and neoplasms</categories>
+</example>
+<example>
+<grant>
+The Use of Rituximab In the treatment of Nephrotic Glomerulonephritis (TURING)
+THE DISEASE_x000D_ Minimal Change Disease (MCD) and Focal Segmental Glomerular Sclerosis (FSGS) are rare diseases that damage kidneys in a similar way, causing protein leakage into the urine with severe swelling of the legs and face. Serious complications can arise resulting in patients being admitted to hospital with bloods clots, infections and kidney failure which may require dialysis or kidney transplantation. MCD and FSGS are caused by an immune reaction in the body, and have identical treatments. _x000D_ _x000D_ CURRENT TREATMENT_x000D_ The medications used to treat MCD and FSGS suppress the body’s immune system. The first line treatment for these diseases is high dose steroids. These have severe side effects including weight gain and diabetes, stomach ulcers which can bleed, thinning of the bones (osteoporosis) and infections. Although steroids are effective in the majority of patients, the disease often comes back (relapses) and multiple courses of steroids are required, with some patients becoming steroid dependent and unable to stop the steroids at all. Other medications are used in these relapsing patients to try and reduce the amount of steroids they need to take, such as cyclophosphamide, mycophenolate mofetil and tacrolimus. However, these treatments are not always effective and also have severe side effects including infections, infertility and increased risk of cancer. There is therefore an urgent need for better treatments for MCD and FSGS._x000D_ _x000D_ STUDY DRUG_x000D_ One potential treatment is rituximab. There have been several clinical trials using rituximab in MCD and FSGS in children and it has been found to be good in delaying disease relapse, and in reducing the need for steroids and other toxic treatments to suppress the immune system. It is generally well tolerated by patients and has fewer side effects than current treatments. It is now funded in the NHS for children but not adults. Early reports of the use of rituximab in adults with MCD and FSGS are promising, however clinical trials of its use in adults are urgently needed to establish its effectiveness and safety in this group of patients. It is an expensive medication and we do not yet know if it is better than existing treatments for adults with MCD/FSGS. If it is more effective than current treatments, it may be cheaper in the long run by keeping patients healthier for longer and preventing hospital admissions. If it the same or worse then using it would be a waste of money and may potentially endanger patients. However, testing new treatments in MCD/FSGS is difficult as these diseases are rare, and studies need to be designed to allow as many patients as possible to participate._x000D_ _x000D_ STUDY PLAN_x000D_ We have assembled a strong team of specialists in kidney disease and clinical trials and have worked with patients' representatives to design the trial. Through the Renal Association (the National Society for specialist kidney doctors in the UK) we have set up a study group to help develop trials such as this. We have asked kidney doctors all over the UK about this proposed trial and already have doctors from 30 major hospitals in the UK interested in taking part. Having such a large number of centres involved in the trial means we should be able to recruit sufficient numbers of patients in less than 3 years. This is aided by the fact that the design of the trial means that most patients with MCD/FSGS should be able to go into the study if they wish.
+</grant>
+<categories>renal and urogenital</categories>
+</example>
+<example>
+<grant>
+Chronic irritability in ADHD: examining clinical and genetic links with depression.
+Attention-Deficit/Hyperactivity Disorder (ADHD) affects 5% of children worldwide. It is characterised by inattention, impulsivity and hyperactivity, and results in impairment into adult life. ADHD is complicated later by depression. This is important, as those with ADHD and depression have more difficulties than those with ADHD alone. Identifying children with ADHD at risk of developing depression provides opportunity for early intervention. Research suggests that children with chronic irritab ility (frequently losing temper, feeling angry/resentful or easily annoyed) are at increased risk of later depression. Chronic irritability is common in ADHD, but its link with depression is yet to be explored in this group. This project aims to test whether childhood ADHD with chronic irritability is associated with increased risk of adolescent depression, and higher genetic loading for depression. A sample of children with ADHD will be used to compare those with and without chronic irritabil ity, in terms of rates of adolescent depression, family history of depression and genetic loading for depression. Due to the overlap of ADHD with other neurodevelopmental disorders (e.g. Intellectual Disability, Autism Spectrum Disorders) a population sample will also be used to assess whether childhood irritability is associated with adolescent depression in a broader group of neurodevelopmental disorders.
+</grant>
+<categories>mental health</categories>
+</example>
+</examples>
+
+For the grant you are given, give the health categories that apply, using these exact names. Do not give percentages.
+blood
+cancer and neoplasms
+cardiovascular
+congenital disorders
+disputed aetiology and other
+ear
+eye
+generic health relevance
+infection
+inflammatory and immune system
+injuries and accidents
+mental health
+metabolic and endocrine
+musculoskeletal
+neurological
+oral and gastrointestinal
+renal and urogenital
+reproductive health and childbirth
+respiratory
+skin
+stroke
+
+===== user message ({text} = the grant) =====
+<grant>
+{text}
+</grant>
+
+Give the health categories that apply, using only the exact names from the list.
+
+===== answer schema =====
+{"type": "object", "required": ["categories"], "properties": {"categories": {"type": "array", "items": {"type": "string", "enum": ["blood", "cancer and neoplasms", "cardiovascular", "congenital disorders", "disputed aetiology and other", "ear", "eye", "generic health relevance", "infection", "inflammatory and immune system", "injuries and accidents", "mental health", "metabolic and endocrine", "musculoskeletal", "neurological", "oral and gastrointestinal", "renal and urogenital", "reproductive health and childbirth", "respiratory", "skin", "stroke"]}}}}
