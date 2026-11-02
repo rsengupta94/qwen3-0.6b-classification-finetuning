@@ -40,7 +40,7 @@ model-index:
 
 # Qwen3-0.6B fine-tuned for HRCS health categories
 
-This model suggests HRCS health categories for a UK health research grant. It reads the grant's title and abstract, and a trained coder then checks its suggestions.
+This model suggests HRCS health categories for a UK health research grant. It reads the grant's title and abstract, and a trained coder then checks its suggestions. This project tests whether a small model, fine-tuned for one narrow task, can beat leading hosted models at that task. On HRCS coding it did, scoring 2.8 points higher than Claude Sonnet 5.5.
 
 UK research funders use the Health Research Classification System (HRCS) to record which area of health a grant is about. Each grant gets one to five of 21 health categories, such as Cancer, Infection or Mental Health.
 
@@ -48,8 +48,8 @@ UK research funders use the Health Research Classification System (HRCS) to reco
 
 These are scores on the official HRCS test set of 972 grants, which the model did not see in training. Micro-F1 is the main score. It combines precision, the share of suggestions that are correct, with recall, the share of correct categories that the model finds.
 
-<img class="dark:hidden" src="https://huggingface.co/rsengupta94/qwen3-0.6b-hrcs-health-categories/resolve/main/assets/results-light.png" alt="Micro-F1 for each row, and this model's lead over each row with its 95% range."/>
-<img class="hidden dark:block" src="https://huggingface.co/rsengupta94/qwen3-0.6b-hrcs-health-categories/resolve/main/assets/results-dark.png" alt="Micro-F1 for each row, and this model's lead over each row with its 95% range."/>
+<img class="dark:hidden" src="https://huggingface.co/rsg07/qwen3-0.6b-hrcs-health-categories/resolve/main/assets/results-light.png" alt="Micro-F1 for each row, and this model's lead over each row with its 95% range."/>
+<img class="hidden dark:block" src="https://huggingface.co/rsg07/qwen3-0.6b-hrcs-health-categories/resolve/main/assets/results-dark.png" alt="Micro-F1 for each row, and this model's lead over each row with its 95% range."/>
 
 | | Micro-F1 | Precision | Recall |
 |---|---|---|---|
@@ -70,7 +70,7 @@ The input is the title, a new line, and then the abstract. The model gives each 
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-repo = "rsengupta94/qwen3-0.6b-hrcs-health-categories"
+repo = "rsg07/qwen3-0.6b-hrcs-health-categories"
 tok = AutoTokenizer.from_pretrained(repo)
 model = AutoModelForSequenceClassification.from_pretrained(repo).eval()
 
@@ -91,8 +91,8 @@ The output looks like `[('infection', 0.98), ('blood', 0.63)]`. The first run do
 
 The model beats Claude Sonnet on most of the large categories, and on Stroke by the widest margin. Claude does better on three small ones: Injuries and Accidents, Eye, and Blood.
 
-<img class="dark:hidden" src="https://huggingface.co/rsengupta94/qwen3-0.6b-hrcs-health-categories/resolve/main/assets/per-category-light.png" alt="F1 for each health category, this model and Claude Sonnet 5.5."/>
-<img class="hidden dark:block" src="https://huggingface.co/rsengupta94/qwen3-0.6b-hrcs-health-categories/resolve/main/assets/per-category-dark.png" alt="F1 for each health category, this model and Claude Sonnet 5.5."/>
+<img class="dark:hidden" src="https://huggingface.co/rsg07/qwen3-0.6b-hrcs-health-categories/resolve/main/assets/per-category-light.png" alt="F1 for each health category, this model and Claude Sonnet 5.5."/>
+<img class="hidden dark:block" src="https://huggingface.co/rsg07/qwen3-0.6b-hrcs-health-categories/resolve/main/assets/per-category-dark.png" alt="F1 for each health category, this model and Claude Sonnet 5.5."/>
 
 <details>
 <summary>Scores for each category</summary>
@@ -136,14 +136,5 @@ Four categories have too few test grants to score: Congenital Disorders, Skin, E
 ## License and credits
 
 This model is for non-commercial use only, under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). HRCS belongs to the UK Clinical Research Collaboration ([hrcsonline.net](https://hrcsonline.net)). NIHR publishes the dataset. Qwen3-0.6B-Base is by the Qwen team, under Apache 2.0.
-
-```bibtex
-@misc{sengupta2026hrcs,
-  author       = {Rajarshi Sengupta},
-  title        = {Qwen3-0.6B fine-tuned for HRCS health categories},
-  year         = {2026},
-  howpublished = {\url{https://huggingface.co/rsengupta94/qwen3-0.6b-hrcs-health-categories}}
-}
-```
 
 Questions are welcome in the Community tab or on [LinkedIn](https://www.linkedin.com/in/rajarshi-sengupta/).
