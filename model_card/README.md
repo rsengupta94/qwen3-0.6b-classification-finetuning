@@ -60,7 +60,7 @@ These are scores on the official HRCS test set of 972 grants, which the model di
 | Claude Haiku 5.5, HRCS guide only | 0.763 | 0.731 | 0.798 |
 | NIHR's model | 0.81 | 0.83 | 0.80 |
 
-The model scored 2.8 points higher than Claude Sonnet 5.5 and 4.6 points higher than Claude Haiku 5.5. A simple keyword model came within 1 point of it. NIHR's numbers come from [its model page](https://huggingface.co/NIHRDataInsights/HRCSHealthCategories), which does not say which test set it used.
+The model scored 2.8 points higher than Claude Sonnet 5.5 and 4.6 points higher than Claude Haiku 5.5. A simple keyword model came within 1 point of it. When the categories depend mostly on the words a text uses, a keyword model can match a fine-tuned one at a fraction of the cost. NIHR's numbers come from [its model page](https://huggingface.co/NIHRDataInsights/HRCSHealthCategories), which does not say which test set it used.
 
 ## How to use
 
@@ -130,7 +130,7 @@ Four categories have too few test grants to score: Congenital Disorders, Skin, E
 | Training data | [NIHRDataInsights/HRCSData](https://huggingface.co/datasets/NIHRDataInsights/HRCSData), UK grants from 2014 to 2022, with 19,175 for training and 1,990 for validation |
 | Input | The first 512 tokens of the title and abstract |
 | Threshold | 0.435, chosen on validation grants to find 80% of the correct categories |
-| Training | 3 passes over the data, 9.85 hours on an Apple M3 Pro laptop |
+| Training | 3 passes over the data |
 | Code | [github.com/rsengupta94/qwen3-0.6b-classification-finetuning](https://github.com/rsengupta94/qwen3-0.6b-classification-finetuning) |
 
 ## License and credits

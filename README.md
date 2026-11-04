@@ -59,7 +59,7 @@ This is a five-minute check that every part of training works.
 uv run python train.py run1
 ```
 
-This trains the model and saves it in `runs/run1/`. It took about 10 hours on an Apple M3 Pro with 36 GB of memory.
+This trains the model and saves it in `runs/run1/`.
 
 ```bash
 uv run python predict.py run1 --test
